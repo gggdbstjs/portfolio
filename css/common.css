@@ -1,0 +1,110 @@
+html,
+body {
+  margin: 0;
+  font-size: 18px;
+  background-color: rgb(124, 187, 212);
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p, figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+section:not(.main-visual) .inner {
+  padding: 100px 0;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+header div {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  transition: height 0.3s;
+}
+header div h1 a {
+  display: block;
+}
+header div h1 a span {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+header div ul {
+  display: flex;
+}
+header div ul li {
+  text-align: center;
+  padding: 5px;
+  font-size: 18px;
+}
+header div ul li a {
+  display: block;
+  padding: 8px 12px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+header div ul li a.active {
+  color: #000;
+  font-weight: bold;
+}
+header div ul li a span {
+  position: relative;
+  pointer-events: none;
+}
+header div ul li a span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+header div ul li:hover span::after {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #eee;
+}/*# sourceMappingURL=common.css.map */
